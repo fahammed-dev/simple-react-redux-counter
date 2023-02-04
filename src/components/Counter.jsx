@@ -1,4 +1,7 @@
+import { useSelector } from 'react-redux';
+
 const Counter = () => {
+    const count = useSelector((state) => state.count);
     return (
         <div className="flex flex-col justify-center items-center h-screen">
             <div className="text-2xl mb-10">
@@ -9,7 +12,7 @@ const Counter = () => {
                     <button className="text-red-600 hover:text-red-700 mr-5">
                         -
                     </button>
-                    <span id="counter">0</span>
+                    <span id="counter">{count}</span>
                     <button className="text-green-600 hover:text-green-700 ml-5">
                         +
                     </button>
