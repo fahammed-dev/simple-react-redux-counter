@@ -3,11 +3,7 @@
         "target": "ES6",
         "module": "commonjs",
         "jsx": "react-jsx",
-        "allowSyntheticDefaultImports": true,
-        "baseUrl": ".",
-        "paths": {
-            "@/*": ["src/*"]
-        }
+        "allowSyntheticDefaultImports": true
     },
     "exclude": ["dist", "node_modules"]
 }
